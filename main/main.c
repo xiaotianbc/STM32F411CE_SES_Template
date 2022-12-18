@@ -29,7 +29,6 @@ int main(void) {
   SysTick_Config(RCC_Clocks.HCLK_Frequency / 1000);
 
   /* Add your application code here */
-  /* Insert 50 ms delay */
   Delay(5);
 
   /* Output SYSCLK/4 clock on MCO2 pin(PC9) ***********************************/
@@ -44,7 +43,7 @@ int main(void) {
 
   /* Infinite loop */
   while (1) {
-  printf("Hello, world\n");
+    printf("Hello, world\n");
     GPIO_ToggleBits(GPIOC, GPIO_Pin_13);
     Delay(500);
   }

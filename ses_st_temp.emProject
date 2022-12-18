@@ -51,15 +51,6 @@
     <configuration
       Name="Debug"
       c_user_include_directories=".;./Driver/STM32F4xx_StdPeriph_Driver/inc;./Driver/CMSIS;./main" />
-    <folder Name="CMSIS Files">
-      <file file_name="STM32F4xx/CMSIS/Device/Source/system_stm32f4xx.c">
-        <configuration
-          Name="Common"
-          default_code_section=".init"
-          default_const_section=".init_rodata" />
-        <configuration Name="Debug" build_exclude_from_build="Yes" />
-      </file>
-    </folder>
     <folder Name="Driver">
       <folder Name="STM32F4xx_Periph_Driver">
         <folder Name="inc">
